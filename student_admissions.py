@@ -120,15 +120,14 @@ def train_nn(features,target,epchos,learnrate):
     return weights
     
 weights = train_nn(features, targets, epochs, learnrate)
-"""
+
 #Calculating the Accuracy on the Test Data
 test_out=sigmoid(np.dot(features_test,weights))
 predictions= test_out > 0.5
 accuracy =np.mean(predictions == targets_test)
 print("Prediction accuracy: {:.3f}".format(accuracy))
- """   
-a=np.array([0.4,0.6,0.5,0.7])
-b=a >0.5
+
+
 
 
 
